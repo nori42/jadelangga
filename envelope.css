@@ -24,7 +24,7 @@
     color: pink;
     display: none;
     position: fixed;
-    top:25%;
+    top:10%;
     left: 50%;
     transform: translateX(-50%);
   }

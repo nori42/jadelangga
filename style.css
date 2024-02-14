@@ -25,16 +25,17 @@
 
 body{
     background-image: linear-gradient(to top,#010329,#000005);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items:flex-end;
     overflow: hidden;
+    height: 100vh;
+    padding: 70px;
 }
 
 .flower{
     position: fixed;
-    top: 50%;
+    top: 30%;
     display: block;
 }
 
