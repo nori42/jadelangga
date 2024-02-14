@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Langga</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="envelope.css">
+</head>
+
+<body>
+  <div class="message-container">
+    <div class="message-text">Happy Valentine's Day, Langga</div>
+  </div>
+  <article>
+    <div class="envelope-container">
+      <div class="message message-2 d-none" id="message-2">
+        <div class="object-container">
+          <img class="object" src="object.jpg" alt="object" srcset="" width="180x" height="180px">
+        </div>
+        <h5 style="text-align: center; margin-top: 15px;">I LOVE YOU SO MUCH MWA MWA</h5>
+      </div>
+      <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">close envelope</button>
+      <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084;
+        <span class="heart-btn-text">Open</span>
+      </button>
+      <div class="envelope-flap">
+        <svg class="inner">
+          <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145"></polygon>
+        </svg>
+        <svg class="outer" id="outer">
+          <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
+        </svg>
+        <div class="floating-hearts">
+          <div class="hearts-row row-10">
+            <div>
+              <i class="ri-heart-fill"></i>
+            </div>
+          </div>
+          <div class="hearts-row row-9">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-8">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-7">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-6">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-5">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-4">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-3">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-2">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-1">
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="envelope-base"></div>
+    </div>
+  </article>
+  <div class="flower" id="flower">
+    <div class="f-wrapper">
+      <div class="flower__line"></div>
+      <div class="f">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__leaf flower__leaf--5"></div>
+        <div class="flower__leaf flower__leaf--6"></div>
+        <div class="flower__leaf flower__leaf--7"></div>
+        <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+      </div>
+    </div>
+
+    <div class="f-wrapper f-wrapper--2">
+      <div class="flower__line"></div>
+      <div class="f">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__leaf flower__leaf--5"></div>
+        <div class="flower__leaf flower__leaf--6"></div>
+        <div class="flower__leaf flower__leaf--7"></div>
+        <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+      </div>
+    </div>
+
+    <div class="f-wrapper f-wrapper--3">
+      <div class="flower__line"></div>
+      <div class="f">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__leaf flower__leaf--5"></div>
+        <div class="flower__leaf flower__leaf--6"></div>
+        <div class="flower__leaf flower__leaf--7"></div>
+        <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+      </div>
+    </div>
+    <div class="flower__glass"></div>
+  </div>
+
+  <script src="envelope.js"></script>
+</body>
+
+</html>
