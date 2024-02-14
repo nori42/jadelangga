@@ -23,18 +23,21 @@
   .message-2 {
     color: pink;
     display: none;
-    position: fixed;
-    top:10%;
+    position: absolute;
+    top:-35%;
     left: 50%;
     transform: translateX(-50%);
   }
 /* ENVELOPE */
-
+.envelope-box{
+  margin-top: 40%;
+}
 /* envelope-container contains all elements of the featured component (you can think of it like your canvas area) */
 .envelope-container {
     position: relative; /* needed to allow for positioning some elements as absolute within the container */
     height: 450px;
     width: 350px;
+    scale: 0.8;
   }
   .envelope-base {
     position: absolute;
